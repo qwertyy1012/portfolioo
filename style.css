@@ -167,17 +167,26 @@ h1, h2, h3 {
   font-style: italic;
 }
 
-.hero h1 {
-  margin-top: 12px;
-  font-size: clamp(65px, 7vw, 100px);
-  line-height: .96;
-  letter-spacing: -2px;
+
+.hero-title {
+    margin-top: 20px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(55px, 7vw, 90px);
+    font-weight: 500;
+    line-height: 1.05;
+    letter-spacing: -2px;
+    color: #172A46;
 }
 
-.hero h1 span,
-h2 span {
-  color: var(--gold);
-  font-style: italic;
+.hero-title span {
+    color: #C7AD82;
+    font-style: italic;
+}
+
+@media (max-width: 600px) {
+    .hero-title {
+        font-size: 58px;
+    }
 }
 
 .hero-description {
